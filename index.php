@@ -16,7 +16,7 @@
 
         <button type="submit">Kontrol Et</button>
     </form>
-    <br><br><br><br>
+    <br><br><br>
 
 
 <?php
@@ -27,7 +27,9 @@ if(trim($sayi) == "" && trim($sayi) == null){ //GİRİLEN SAYININ BOŞ OLUP OLMA
     echo "LÜTFEN BİR SAYI GİRİN!";
 }
 
-if(trim($sayi)){ //TEKRAR BİR KONTROL İÇİN GİRİLEN DEĞERİN VARLIĞINI KONTROL EDİYOR
+if(trim($sayi)){
+    echo "Girilen sayı: ".$sayi;
+    echo "<br>";//TEKRAR BİR KONTROL İÇİN GİRİLEN DEĞERİN VARLIĞINI KONTROL EDİYOR
     if($sayi % 3 == 0){//SAYININ 3 İLE BÖLÜNÜP BÖLÜNMEDİĞİNİ KONTROL EDİYOR
         echo "Girdiğiniz sayı 3 ile tam bölünebiliyor.";
     }
